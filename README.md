@@ -11,7 +11,7 @@
   * driverClassName (e.g. "org.mariadb.jdbc.Driver")
 * Change your ip-address in file my-default-jgroups-tcp.xml line 3 and 17
 
-The main class code exists only to provoke a write-skew exception, so please don’t invest too much time in it.
+The main class code exists only to provoke a write-skew exception, so please don’t invest too much time in it. Also the logging is ok. Problems happen under the hood.
 
 Set a breakpoint at:
 https://github.com/infinispan/infinispan/blob/225e3985d357ff7693dc6abc9939d19fe520fcec/persistence/jdbc-common/src/main/java/org/infinispan/persistence/jdbc/common/impl/BaseJdbcStore.java#L245
