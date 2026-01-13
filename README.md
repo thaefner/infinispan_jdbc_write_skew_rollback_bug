@@ -16,6 +16,8 @@ The main class code exists only to provoke a write-skew exception, so please don
 Set a breakpoint at:
 https://github.com/infinispan/infinispan/blob/225e3985d357ff7693dc6abc9939d19fe520fcec/persistence/jdbc-common/src/main/java/org/infinispan/persistence/jdbc/common/impl/BaseJdbcStore.java#L245
 
+Run the program only with one cluster node.
+
 When rollback is called, the method getTxConnection(Transaction tx) is invoked:
 https://github.com/infinispan/infinispan/blob/225e3985d357ff7693dc6abc9939d19fe520fcec/persistence/jdbc-common/src/main/java/org/infinispan/persistence/jdbc/common/impl/BaseJdbcStore.java#L256
 
